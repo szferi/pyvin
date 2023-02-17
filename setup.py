@@ -4,5 +4,6 @@ setup(
     name="pyvin",
     version="0.1",
     packages=find_packages(),
-    setup_requires=['nose>=1.0']
+    setup_requires=['nose>=1.0'],
+    include_package_data=True,
 )

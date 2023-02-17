@@ -168,10 +168,8 @@ def get_year(c):
 
 class WMIDatabase(object):
     def __init__(self, name):
-        path = os.path.join(os.path.dirname(
-                            os.path.dirname(
-                                os.path.abspath(__file__))),
-                            "data", name)
+        path = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                            name)
         # print path, os.path.abspath(__file__)
         self.db = {}
         with open(path, "r") as f:
